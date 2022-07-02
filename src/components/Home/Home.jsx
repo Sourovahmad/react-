@@ -1,6 +1,27 @@
 import React from 'react';
 import './Home.css';
 
+const A = [
+    {
+       value: "011 Nursery and Floriculture Production"
+    },
+    {
+        value: "012 Mushroom and Vegetable Growing"
+    },
+    {
+        value: "013 Fruit and Tree Nut Growing"
+    },
+    {
+        value: "014 Sheep, Beef Cattle and Grain Farming"
+    },
+    {
+        value: "015 Other Crop Growing"
+    },
+    {
+        value: "016 Dairy Cattle Farming"
+    },
+];
+
 const Home = () => {
     return (
         <div className='home_area'>
@@ -21,12 +42,15 @@ const Home = () => {
                             
                                 <div className="dropdown_area ">
                                     <div className='first_dropdown mb-4'>
+                                        
                                         <div className="dropdown">
                                             <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                                 * Industry top level (i)
                                             </button>
                                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a className="dropdown-item" href="#">A. Agriculture, Forestry and Fishing</a></li>
+                                                <li>
+                                                    <a className="dropdown-item" href="#">A. Agriculture, Forestry and Fishing</a>
+                                                </li>
                                                 <li><a className="dropdown-item" href="#">B. Mining</a></li>
                                                 <li><a className="dropdown-item" href="#">C. Manufacturing</a></li>
                                                 <li><a className="dropdown-item" href="#">D. Electricity, Gas, Water and Waste Services</a></li>
@@ -93,9 +117,49 @@ const Home = () => {
                                                 * City of Company (i)
                                             </button>
                                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a className="dropdown-item" href="#">Action</a></li>
-                                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                                <li><a className="dropdown-item" href="#">Something else here</a></li>
+                                                <li><a className="dropdown-item" href="#">Melbourne Vic</a></li>
+                                                <li><a className="dropdown-item" href="#">Sydney NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Brisbane Qid</a></li>
+                                                <li><a className="dropdown-item" href="#">Perth WA</a></li>
+                                                <li><a className="dropdown-item" href="#">Adelaide SA</a></li>
+                                                <li><a className="dropdown-item" href="#">Gold Coast - Tweed Heeads Qid /NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Newcastle -Queanbeyan  ACT/NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Sunshine Coast NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Central Coast NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Wollongong NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Geelong Vic</a></li>
+                                                <li><a className="dropdown-item" href="#">Ipswich QLD</a></li>
+                                                <li><a className="dropdown-item" href="#">Hobart Tas</a></li>
+                                                <li><a className="dropdown-item" href="#">Townsville Qid</a></li>
+                                                <li><a className="dropdown-item" href="#">Cairns Qid</a></li>
+                                                <li><a className="dropdown-item" href="#">Toowoomba Qid</a></li>
+                                                <li><a className="dropdown-item" href="#">Darwin NT</a></li>
+                                                <li><a className="dropdown-item" href="#">Ballarat Vic</a></li>
+                                                <li><a className="dropdown-item" href="#">Bendigo Vic</a></li>
+                                                <li><a className="dropdown-item" href="#">Albury - Wodonga NSW/Vic</a></li>
+                                                <li><a className="dropdown-item" href="#">Launceston Tas</a></li>
+                                                <li><a className="dropdown-item" href="#">Mackay Qid</a></li>
+                                                <li><a className="dropdown-item" href="#">Rockhampton Qid</a></li>
+                                                <li><a className="dropdown-item" href="#">Melton Vic</a></li>
+                                                <li><a className="dropdown-item" href="#">Bunbury WA</a></li>
+                                                <li><a className="dropdown-item" href="#">Coffs Harbour NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Bundaberg Qld</a></li>
+                                                <li><a className="dropdown-item" href="#">Shepparton - Mooroopna Vic</a></li>
+                                                <li><a className="dropdown-item" href="#">Mildura - Wentworth Vic/NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Port Macquarie NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Gladstone - Tannum Sands Qid</a></li>
+                                                <li><a className="dropdown-item" href="#">Tamworth NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Traralgon - Morwell Vic</a></li>
+                                                <li><a className="dropdown-item" href="#">Bowral - Mittagong NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Orange NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Warragul - Drouin Vic</a></li>
+                                                <li><a className="dropdown-item" href="#">Albany WA</a></li>
+                                                <li><a className="dropdown-item" href="#">Devonport Tas</a></li>
+                                                <li><a className="dropdown-item" href="#">Mount Gambier SA</a></li>
+                                                <li><a className="dropdown-item" href="#">Kalgoorlie - Boulder WA</a></li>
+                                                <li><a className="dropdown-item" href="#">Lismore NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Nelson Bay NSW</a></li>
+                                                <li><a className="dropdown-item" href="#">Other</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -125,9 +189,19 @@ const Home = () => {
                                                 <li><a className="dropdown-item" href="#">0 Sole trader</a></li>
                                                 <li><a className="dropdown-item" href="#">1 employee</a></li>
                                                 <li><a className="dropdown-item" href="#">2 employee</a></li>
-                                                <li><a className="dropdown-item" href="#">3 employee</a></li>
-                                                <li><a className="dropdown-item" href="#">4 employee</a></li>
-                                                <li><a className="dropdown-item" href="#">5 employee</a></li>
+                                                <li><a className="dropdown-item" href="#">3 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">4 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">5 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">6-10 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">11-15 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">16-20 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">21-30 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">31-50 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">51-100 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">101-200 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">201-500 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">501-1,000 employees</a></li>
+                                                <li><a className="dropdown-item" href="#">1,000+ employees</a></li>
                                             </ul>
                                         </div>
                                     </div>

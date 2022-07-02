@@ -1,12 +1,13 @@
 import React from 'react';
 import './Navbar.css';
+import logo from '../../assets/images/logo.png';
 
 const Navbar = () => {
     
     return (
         <nav class="navbar navbar_area navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="#">Navbar Brand</a>
+                <a class="navbar-brand" href="#"><img className='border img-fluid w-50 h-50' src={logo} alt="" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
