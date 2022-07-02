@@ -1,0 +1,39 @@
+.contact_area {
+    background-color: #5C97D9;
+    padding: 120px 0 50px;
+}
+.contact_area .contact_inner .title {
+    font-size: 45px;
+    margin-bottom: 35px;
+}
+.contact_area .contact_inner .info {
+    margin: 0 0 40px 0;
+}
+.contact_area .contact_inner .info .info_title {
+    margin: 0;
+    font-weight: 600;
+}
+.contact_area .contact_inner .info .inner_info {
+    margin: 0 0 0 110px;
+}
+.contact_area .contact_inner .info .inner_info p {
+    margin: 0;
+    font-weight: 400;
+}
+.contact_area .contact_inner .form_area .submit {
+    background: #d63030;
+    color: white;
+    padding: 9px 35px;
+    font-weight: 700;
+}
+.contact_area .contact_inner .form_area .form_title {
+    margin: 0;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .contact_area .contact_inner .title {
+        font-size: 35px;
+    }
+}

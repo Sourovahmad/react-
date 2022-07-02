@@ -1,0 +1,10 @@
+.navbar_area .custom_navbar_area .custom_singinANDsignup {
+    background-color: rgb(208, 43, 43);
+}
+.navbar_area .custom_navbar_area .custom_singinANDsignup a {
+    color: white;
+    font-weight: 600;
+}
+.navbar_area .custom_navbar_area .custom_singinANDsignup a:hover {
+    color: white;
+}

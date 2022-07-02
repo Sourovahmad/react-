@@ -1,0 +1,124 @@
+.home_area {
+    background-color: #5C97D9;
+    padding: 80px 0 50px;
+}
+.home_area .home_inner .text_up {
+    font-size: 18px;
+    font-weight: 500;
+    padding-bottom: 15px;
+}
+.home_area .home_inner .text_down {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 35px;
+}
+.home_area .home_inner .home_inner_left p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.home_area .home_inner .home_inner_left .dropdown_area  {
+    
+}
+.home_area .home_inner .home_inner_left .dropdown_area .first_dropdown {
+}
+.home_area .home_inner .home_inner_left .dropdown_area .first_dropdown button, .home_area .home_inner .home_inner_left .dropdown_area .second_dropdown button,.home_area .home_inner .home_inner_left .dropdown_area .third_dropdown button {
+    background-color: #c5dbf1;
+    color: #000;
+    font-weight: 500;
+}
+
+.home_area .home_inner .home_inner_right p {
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.home_area .home_inner .home_inner_left .button_area  {
+    display: flex;
+}
+.home_area .home_inner .home_inner_left .button_area .submit_value  {
+   background-color: rgb(138, 23, 23);
+   color: white;
+   font-weight: 600;
+   border-width: 3px;
+   padding: 9px 15px;
+}
+.home_area .home_inner .home_inner_right {
+
+}
+.home_area .home_inner .home_inner_right table {
+    background-color: #c5dbf1;
+}
+.home_area .home_inner .home_inner_right table th {
+    border-color: #000;
+}
+.home_area .home_inner .home_inner_right table td {
+    border-color: #000;
+    text-align: center;
+}
+.home_area .advanced_area {
+    text-align: center;
+}
+.home_area .advanced_area p {
+    font-size: 18px;
+    font-weight: 500;
+}
+.home_area .advanced_area .advanced_btn {
+    background-color: rgb(138, 23, 23);
+    color: white;
+    font-weight: 600;
+    border-width: 3px;
+    padding: 9px 20px;
+}
+.home_area .table_inside td, .home_area .table_inside th {
+    border-color: #000;
+}
+/* overright */
+.btn {
+    border-radius: 0;
+    width: 55%;
+    text-align: left;
+}
+.dropdown-menu {
+    border-radius: 0;
+    border: 0;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .btn {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .btn {
+        width: 80%;
+        text-align: center;
+    }
+    
+}
+@media (min-width: 320px) and (max-width: 480px) {
+    .home_area .table_inside {
+        margin: 20px 0;
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home_area .home_inner .home_inner_left .button_area  {
+        margin-bottom: 20px;
+    }
+    
+}
