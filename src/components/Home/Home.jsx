@@ -1,28 +1,22 @@
 import React from 'react';
 import './Home.css';
 
-const A = [
-    {
-       value: "011 Nursery and Floriculture Production"
-    },
-    {
-        value: "012 Mushroom and Vegetable Growing"
-    },
-    {
-        value: "013 Fruit and Tree Nut Growing"
-    },
-    {
-        value: "014 Sheep, Beef Cattle and Grain Farming"
-    },
-    {
-        value: "015 Other Crop Growing"
-    },
-    {
-        value: "016 Dairy Cattle Farming"
-    },
-];
 
 const Home = () => {
+
+    function elementFinder(id){
+        return document.getElementById(id);
+    }
+
+
+    function changedSelector(event){
+        // const selectorValue = elementFinder('top_level_selector').value;
+        // console.log(selectorValue);
+
+        console.log(event.target.value);
+    }
+
+
     return (
         <div className='home_area'>
             <div className="container">
@@ -42,47 +36,50 @@ const Home = () => {
                             
                                 <div className="dropdown_area ">
                                     <div className='first_dropdown mb-4'>
+
+
+
+                                    <select class="form-select w-30" aria-label="Default select example"  id="top_level_selector" onChange={changedSelector}>
+                                        <option selected>* Industry top level (i)</option>
+                                        <option value="A">A. Agriculture, Forestry and Fishing</option>
+                                        <option value="B">B. Mining</option>
+                                        <option value="C">C. Manufacturing</option>
+                                        <option value="D">D. Electricity, Gas, Water and Waste Services</option>
+                                        <option value="E">E. Construction</option>
+                                        <option value="F">F. Wholesale Trade</option>
+                                        <option value="H">H. Accommodation and Food Services</option>
+                                        <option value="I">I. Transport, Postal and Warehousing</option>
+                                        <option value="J">J. Information Media and Telecommunications</option>
+                                        <option value="K">k. Financial and Insurance Services</option>
+                                        <option value="L">L. Rental, Hiring and Real Estate Services</option>
+                                        <option value="M">M. Professional, Scientific and Technical Services</option>
+                                        <option value="N">N. Administrative and Support Services</option>
+                                        <option value="O">O. Public Administration and Safety</option>
+                                        <option value="P">P. Education and Training</option>
+                                        <option value="Q">Q. Health Care and Social Assistance</option>
+                                        <option value="R">R. Arts and Recreation</option>
+                                        <option value="S">S. Other Services</option>
+                                        <option value="Z">Z. Other</option>
+                                    </select>
+
+
                                         
-                                        <div className="dropdown">
-                                            <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                * Industry top level (i)
-                                            </button>
-                                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li>
-                                                    <a className="dropdown-item" href="#">A. Agriculture, Forestry and Fishing</a>
-                                                </li>
-                                                <li><a className="dropdown-item" href="#">B. Mining</a></li>
-                                                <li><a className="dropdown-item" href="#">C. Manufacturing</a></li>
-                                                <li><a className="dropdown-item" href="#">D. Electricity, Gas, Water and Waste Services</a></li>
-                                                <li><a className="dropdown-item" href="#">E. Construction</a></li>
-                                                <li><a className="dropdown-item" href="#">F. Wholesale Trade</a></li>
-                                                <li><a className="dropdown-item" href="#">G. Retail Trade</a></li>
-                                                <li><a className="dropdown-item" href="#">H. Accommodation and Food Services</a></li>
-                                                <li><a className="dropdown-item" href="#">I. Transport, Postal and Warehousing</a></li>
-                                                <li><a className="dropdown-item" href="#">J. Information Media and Telecommunications</a></li>
-                                                <li><a className="dropdown-item" href="#">k. Financial and Insurance Services</a></li>
-                                                <li><a className="dropdown-item" href="#">L. Rental, Hiring and Real Estate Services</a></li>
-                                                <li><a className="dropdown-item" href="#">M. Professional, Scientific and Technical Services</a></li>
-                                                <li><a className="dropdown-item" href="#">N. Administrative and Support Services</a></li>
-                                                <li><a className="dropdown-item" href="#">O. Public Administration and Safety</a></li>
-                                                <li><a className="dropdown-item" href="#">P. Education and Training</a></li>
-                                                <li><a className="dropdown-item" href="#">Q. Health Care and Social Assistance</a></li>
-                                                <li><a className="dropdown-item" href="#">R. Arts and Recreation</a></li>
-                                                <li><a className="dropdown-item" href="#">S. Other Services</a></li>
-                                                <li><a className="dropdown-item" href="#">Z. Other</a></li>
-                                            </ul>
+                                    </div>
+
+                                    <div className="second_dropdown mb-4">
+                                    <select className="form-select w-30" aria-label="Default select example">
+                                       
+
+                                        <div className="group_a">
+                                        <option selected>* Industry second level (i)</option>
+
+                                            <option value="">011 Nursery and Floriculture Production</option>
+                                            <option value="">012 Mushroom and Vegetable Growing</option>
                                         </div>
 
-                                        <div className="dropdown">
-                                            <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                                * Industry Second level
-                                            </button>
-                                            <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a className="dropdown-item" href="#">Action</a></li>
-                                                <li><a className="dropdown-item" href="#">Another action</a></li>
-                                                <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                            </ul>
-                                        </div>
+                                       
+
+                                    </select>
                                     </div>
 
                                     <div className='second_dropdown mb-4'>
@@ -91,8 +88,8 @@ const Home = () => {
                                                 * Country company
                                             </button>
                                             <ul className="dropdown-menu text-uppercase" aria-labelledby="dropdownMenuButton1">
-                                                <li><a className="dropdown-item" href="#">00 Multinational</a></li>
-                                                <li><a className="dropdown-item" href="#">01 Australia</a></li>
+                                                {/* <li><a className="dropdown-item" href="#">00 Multinational</a></li>
+                                                <li><a className="dropdown-item" href="#">01 Australia</a></li> */}
                                             </ul>
                                         </div>
 
@@ -101,14 +98,14 @@ const Home = () => {
                                                 * State of Company (i)
                                             </button>
                                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a className="dropdown-item" href="#">01 Australian Capital Territory</a></li>
+                                                {/* <li><a className="dropdown-item" href="#">01 Australian Capital Territory</a></li>
                                                 <li><a className="dropdown-item" href="#">02 New South Wales</a></li>
                                                 <li><a className="dropdown-item" href="#">03 Northern Territory</a></li>
                                                 <li><a className="dropdown-item" href="#">04 Queensland</a></li>
                                                 <li><a className="dropdown-item" href="#">05 South Australia</a></li>
                                                 <li><a className="dropdown-item" href="#">06 Tasmania</a></li>
                                                 <li><a className="dropdown-item" href="#">07 Victoria</a></li>
-                                                <li><a className="dropdown-item" href="#">08 Western Australia</a></li>
+                                                <li><a className="dropdown-item" href="#">08 Western Australia</a></li> */}
                                             </ul>
                                         </div>
 
@@ -117,7 +114,7 @@ const Home = () => {
                                                 * City of Company (i)
                                             </button>
                                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a className="dropdown-item" href="#">Melbourne Vic</a></li>
+                                                {/* <li><a className="dropdown-item" href="#">Melbourne Vic</a></li>
                                                 <li><a className="dropdown-item" href="#">Sydney NSW</a></li>
                                                 <li><a className="dropdown-item" href="#">Brisbane Qid</a></li>
                                                 <li><a className="dropdown-item" href="#">Perth WA</a></li>
@@ -159,7 +156,7 @@ const Home = () => {
                                                 <li><a className="dropdown-item" href="#">Kalgoorlie - Boulder WA</a></li>
                                                 <li><a className="dropdown-item" href="#">Lismore NSW</a></li>
                                                 <li><a className="dropdown-item" href="#">Nelson Bay NSW</a></li>
-                                                <li><a className="dropdown-item" href="#">Other</a></li>
+                                                <li><a className="dropdown-item" href="#">Other</a></li> */}
                                             </ul>
                                         </div>
                                     </div>
@@ -170,14 +167,14 @@ const Home = () => {
                                                 * Years Trading (i)
                                             </button>
                                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a className="dropdown-item" href="#">Not trading yet (i)</a></li>
+                                                {/* <li><a className="dropdown-item" href="#">Not trading yet (i)</a></li>
                                                 <li><a className="dropdown-item" href="#">0 - 1 yr (i)</a></li>
                                                 <li><a className="dropdown-item" href="#">1 - 2 Yrs (i)</a></li>
                                                 <li><a className="dropdown-item" href="#">2 - 3 Yrs (i)</a></li>
                                                 <li><a className="dropdown-item" href="#">3 - 4 Yrs (i)</a></li>
                                                 <li><a className="dropdown-item" href="#">4 - 5 Yrs (i)</a></li>
                                                 <li><a className="dropdown-item" href="#">5 - 6 Yrs (i)</a></li>
-                                                <li><a className="dropdown-item" href="#">6 + Yrs (i)</a></li>
+                                                <li><a className="dropdown-item" href="#">6 + Yrs (i)</a></li> */}
                                             </ul>
                                         </div>
 
@@ -186,7 +183,7 @@ const Home = () => {
                                                 * Number of
                                             </button>
                                             <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                                <li><a className="dropdown-item" href="#">0 Sole trader</a></li>
+                                                {/* <li><a className="dropdown-item" href="#">0 Sole trader</a></li>
                                                 <li><a className="dropdown-item" href="#">1 employee</a></li>
                                                 <li><a className="dropdown-item" href="#">2 employee</a></li>
                                                 <li><a className="dropdown-item" href="#">3 employees</a></li>
@@ -201,7 +198,7 @@ const Home = () => {
                                                 <li><a className="dropdown-item" href="#">101-200 employees</a></li>
                                                 <li><a className="dropdown-item" href="#">201-500 employees</a></li>
                                                 <li><a className="dropdown-item" href="#">501-1,000 employees</a></li>
-                                                <li><a className="dropdown-item" href="#">1,000+ employees</a></li>
+                                                <li><a className="dropdown-item" href="#">1,000+ employees</a></li> */}
                                             </ul>
                                         </div>
                                     </div>
