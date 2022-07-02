@@ -69,44 +69,38 @@ const Home = () => {
                                 <p>Select the appropriate drop-down option</p>
                             
                                 <div className="dropdown_area ">
-                                    <div className='first_dropdown mb-4'>
-
-
-
-                                    <select class="form-select w-30" aria-label="Default select example"  id="top_level_selector" onChange={changedSelector}>
-                                        <option selected>* Industry top level (i)</option>
-                                        <option value="A">A. Agriculture, Forestry and Fishing</option>
-                                        <option value="B">B. Mining</option>
-                                        <option value="C">C. Manufacturing</option>
-                                        {/* <option value="D">D. Electricity, Gas, Water and Waste Services</option>
-                                        <option value="E">E. Construction</option>
-                                        <option value="F">F. Wholesale Trade</option>
-                                        <option value="H">H. Accommodation and Food Services</option>
-                                        <option value="I">I. Transport, Postal and Warehousing</option>
-                                        <option value="J">J. Information Media and Telecommunications</option>
-                                        <option value="K">k. Financial and Insurance Services</option>
-                                        <option value="L">L. Rental, Hiring and Real Estate Services</option>
-                                        <option value="M">M. Professional, Scientific and Technical Services</option>
-                                        <option value="N">N. Administrative and Support Services</option>
-                                        <option value="O">O. Public Administration and Safety</option>
-                                        <option value="P">P. Education and Training</option>
-                                        <option value="Q">Q. Health Care and Social Assistance</option>
-                                        <option value="R">R. Arts and Recreation</option>
-                                        <option value="S">S. Other Services</option>
-                                        <option value="Z">Z. Other</option> */}
-                                    </select>
-
-
-                                        
+                                    <div className='first_dropdown'>
+                                        <select class="form-select w-30" aria-label="Default select example"  id="top_level_selector" onChange={changedSelector}>
+                                            <option selected>* Industry top level (i)</option>
+                                            <option value="A">A. Agriculture, Forestry and Fishing</option>
+                                            <option value="B">B. Mining</option>
+                                            <option value="C">C. Manufacturing</option>
+                                            {/* <option value="D">D. Electricity, Gas, Water and Waste Services</option>
+                                            <option value="E">E. Construction</option>
+                                            <option value="F">F. Wholesale Trade</option>
+                                            <option value="H">H. Accommodation and Food Services</option>
+                                            <option value="I">I. Transport, Postal and Warehousing</option>
+                                            <option value="J">J. Information Media and Telecommunications</option>
+                                            <option value="K">k. Financial and Insurance Services</option>
+                                            <option value="L">L. Rental, Hiring and Real Estate Services</option>
+                                            <option value="M">M. Professional, Scientific and Technical Services</option>
+                                            <option value="N">N. Administrative and Support Services</option>
+                                            <option value="O">O. Public Administration and Safety</option>
+                                            <option value="P">P. Education and Training</option>
+                                            <option value="Q">Q. Health Care and Social Assistance</option>
+                                            <option value="R">R. Arts and Recreation</option>
+                                            <option value="S">S. Other Services</option>
+                                            <option value="Z">Z. Other</option> */}
+                                        </select>
                                     </div>
 
                                     <div className="second_dropdown mb-4">
-                                    <select className="form-select w-30" aria-label="Default select example" id='secondLevelSelect'>
-                                       
+                                        <select className="form-select w-30" aria-label="Default select example" id='secondLevelSelect'>
+                                        
 
-                                       
+                                        
 
-                                    </select>
+                                        </select>
                                     </div>
 
                                     <div className='second_dropdown mb-4'>

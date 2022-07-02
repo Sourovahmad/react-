@@ -25,7 +25,7 @@
 }
 .home_area .home_inner .home_inner_left .dropdown_area .first_dropdown {
 }
-.home_area .home_inner .home_inner_left .dropdown_area .first_dropdown button, .home_area .home_inner .home_inner_left .dropdown_area .second_dropdown button,.home_area .home_inner .home_inner_left .dropdown_area .third_dropdown button {
+.home_area .home_inner .home_inner_left .dropdown_area .first_dropdown select , .home_area .home_inner .home_inner_left .dropdown_area .second_dropdown button,.home_area .home_inner .home_inner_left .dropdown_area .third_dropdown button, .home_area .home_inner .home_inner_left .dropdown_area .second_dropdown select {
     background-color: #c5dbf1;
     color: #000;
     font-weight: 500;
@@ -90,7 +90,12 @@
 .dropdown-toggle::after {
     display: none;
 }
-
+.form-select {
+    background-image: none;
+    border-radius: 0;
+    border-color: #000;
+    width: 55%;
+}
 
 
 
@@ -100,6 +105,9 @@
         width: 80%;
         text-align: center;
     }
+    .form-select {
+        width: 80%;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -107,7 +115,9 @@
         width: 80%;
         text-align: center;
     }
-    
+    .form-select {
+        width: 80%;
+    }
 }
 @media (min-width: 320px) and (max-width: 480px) {
     .home_area .table_inside {
@@ -121,5 +131,7 @@
     .home_area .home_inner .home_inner_left .button_area  {
         margin-bottom: 20px;
     }
-    
+    .form-select {
+        width: 100%;
+    }
 }
