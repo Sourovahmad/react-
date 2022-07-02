@@ -10,10 +10,44 @@ const Home = () => {
 
 
     function changedSelector(event){
-        // const selectorValue = elementFinder('top_level_selector').value;
-        // console.log(selectorValue);
 
-        console.log(event.target.value);
+        let filterdHtml = null;
+
+        let html_A = `<option selected>* Industry second level (i)</option>
+        <option value="">011 Nursery and Floriculture Production</option>
+        <option value="">012 Mushroom and Vegetable Growing</option>`
+
+
+
+        let html_B = `
+        <option selected>* Industry second level (i)</option>
+        <option value="">060 Coal Mining</option>
+        <option value="">070 Oil and Gas Extraction</option>
+        `
+
+
+        let html_C = `
+        <option selected>* Industry second level (i)</option>
+        <option value="">111 Meat and Meat Product Manufacturing</option>
+        <option value="">112 Seafood Processing</option>
+        `
+        const selectorValue = event.target.value;
+
+        if (selectorValue === 'A') {
+            filterdHtml = html_A
+        }
+
+        
+        if (selectorValue === 'B') {
+            filterdHtml = html_B
+        }
+
+               
+        if (selectorValue === 'C') {
+            filterdHtml = html_C
+        }
+
+        elementFinder("secondLevelSelect").innerHTML = filterdHtml;
     }
 
 
@@ -44,7 +78,7 @@ const Home = () => {
                                         <option value="A">A. Agriculture, Forestry and Fishing</option>
                                         <option value="B">B. Mining</option>
                                         <option value="C">C. Manufacturing</option>
-                                        <option value="D">D. Electricity, Gas, Water and Waste Services</option>
+                                        {/* <option value="D">D. Electricity, Gas, Water and Waste Services</option>
                                         <option value="E">E. Construction</option>
                                         <option value="F">F. Wholesale Trade</option>
                                         <option value="H">H. Accommodation and Food Services</option>
@@ -59,7 +93,7 @@ const Home = () => {
                                         <option value="Q">Q. Health Care and Social Assistance</option>
                                         <option value="R">R. Arts and Recreation</option>
                                         <option value="S">S. Other Services</option>
-                                        <option value="Z">Z. Other</option>
+                                        <option value="Z">Z. Other</option> */}
                                     </select>
 
 
@@ -67,15 +101,8 @@ const Home = () => {
                                     </div>
 
                                     <div className="second_dropdown mb-4">
-                                    <select className="form-select w-30" aria-label="Default select example">
+                                    <select className="form-select w-30" aria-label="Default select example" id='secondLevelSelect'>
                                        
-
-                                        <div className="group_a">
-                                        <option selected>* Industry second level (i)</option>
-
-                                            <option value="">011 Nursery and Floriculture Production</option>
-                                            <option value="">012 Mushroom and Vegetable Growing</option>
-                                        </div>
 
                                        
 
